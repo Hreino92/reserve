@@ -6,6 +6,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\PaqueteController;
 use App\Http\Controllers\TransportServiceController;
 use App\Http\Controllers\HotelController;
+use App\Http\Controllers\CotizacionController;
 
 // ✅ Ruta principal (home) sin duplicados
 Route::get('/', function () {
@@ -40,15 +41,19 @@ Route::middleware(['auth', 'admin'])->group(function () {
 Route::get('/elsalvador', [PaqueteController::class, 'elsalvador'])->name('elsalvador');
 Route::get('/transporte', [TransportServiceController::class, 'transporte'])->name('transporte');
 Route::get('/hoteles', [HotelController::class, 'hoteles'])->name('hoteles');
+Route::get('/services', [CotizacionController::class, 'cotizar'])->name('services');
 
-Route::get('/services', function () {
-    return view('services');
-})->name('services');
+// Route::get('/services', function () {
+//     return view('services');
+// })->name('services');
 
+Route::get('/about-us', function () {
+    return view('about-us');
+})->name('about-us');
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
 
-
+Route::post('/enviar-cotizacion', [CotizacionController::class, 'enviarCorreo'])->name('enviar.cotizacion');
 
 require __DIR__.'/auth.php';

@@ -3,8 +3,9 @@
         <div class="flex justify-between items-center h-16">
             <div class="shrink-0">
                 <a href="{{ url('/') }}">
-                    <x-application-logo class="block h-9 w-auto" />
+                    <x-application-logo class="block" style="height: auto; width: 100%; max-width: 200px;" />
                 </a>
+                
             </div>
 
             <!-- Menú de navegación -->
@@ -26,7 +27,8 @@
                     </div>
                 </div>
 
-                <a href="{{ route('services') }}" class="text-gray-900 hover:text-blue-500">Servicios</a>
+                <a href="{{ route('services') }}" class="text-gray-900 hover:text-blue-500">Cotizar Servicios</a>
+                <a href="{{ route('about-us') }}" class="text-gray-900 hover:text-blue-500">Sobre nosotros</a>
                 <a href="{{ route('contact') }}" class="text-gray-900 hover:text-blue-500">Contacto</a>
 
                 <!-- Verificar si el usuario es admin usando el campo is_admin -->
@@ -44,7 +46,7 @@
                             <a href="{{ route('paquetes.index') }}" class="block px-4 py-2 text-sm text-blue-600 hover:bg-gray-100">Paquetes</a>
                             <a href="{{ route('transport-services.index') }}" class="block px-4 py-2 text-sm text-blue-600 hover:bg-gray-100">Transporte</a>
                             <a href="{{ route('hotels.index') }}" class="block px-4 py-2 text-sm text-blue-600 hover:bg-gray-100">Hoteles</a>
-                            <a href="{{ route('dashboard') }}" class="block px-4 py-2 text-sm text-blue-600 hover:bg-gray-100">Dashboard</a>
+                            {{-- <a href="{{ route('dashboard') }}" class="block px-4 py-2 text-sm text-blue-600 hover:bg-gray-100">Dashboard</a> --}}
                             <form method="POST" action="{{ route('logout') }}">
                                 @csrf
                                 <button type="submit" class="block w-full text-left px-4 py-2 text-sm text-blue-600 hover:bg-gray-100">Cerrar sesión</button>
@@ -86,7 +88,8 @@
                 </div>
             </div>
 
-            <a href="{{ route('services') }}" class="block text-gray-900 hover:text-blue-500 px-4 py-2">Servicios</a>
+            <a href="{{ route('services') }}" class="block text-gray-900 hover:text-blue-500 px-4 py-2">Cotizar servicios</a>
+            <a href="{{ route('about-us') }}" class="block text-gray-900 hover:text-blue-500 px-4 py-2">Sobre nosotros</a>
             <a href="{{ route('contact') }}" class="block text-gray-900 hover:text-blue-500 px-4 py-2">Contacto</a>
 
             <!-- Verificar si el usuario es admin usando el campo is_admin -->
@@ -104,7 +107,7 @@
                         <a href="{{ route('paquetes.index') }}" class="block px-4 py-2 text-sm text-blue-600 hover:bg-gray-100">Paquetes</a>
                         <a href="{{ route('transport-services.index') }}" class="block px-4 py-2 text-sm text-blue-600 hover:bg-gray-100">Transporte</a>
                         <a href="{{ route('hotels.index') }}" class="block px-4 py-2 text-sm text-blue-600 hover:bg-gray-100">Hoteles</a>
-                        <a href="{{ route('dashboard') }}" class="block px-4 py-2 text-sm text-blue-600 hover:bg-gray-100">Dashboard</a>
+                        {{-- <a href="{{ route('dashboard') }}" class="block px-4 py-2 text-sm text-blue-600 hover:bg-gray-100">Dashboard</a> --}}
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
                             <button type="submit" class="block w-full text-left px-4 py-2 text-sm text-blue-600 hover:bg-gray-100">Cerrar sesión</button>

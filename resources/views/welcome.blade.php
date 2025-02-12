@@ -88,7 +88,7 @@
         <!-- Cards -->
 
         <div class="container  my-5 p-4 bg-light rounded shadow-lg">
-            <h1 class="green-text text-center" data-section="brands" data-value="title">Nuestras marcas</h1>
+            <h1 class="green-text text-center display-3" data-section="brands" data-value="title">Nuestras marcas</h1>
 
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col zoom-effect">
