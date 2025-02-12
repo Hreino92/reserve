@@ -1,8 +1,9 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-blue-800 dark:text-blue-400 leading-tight">
-            {{ __('Dashboard') }}
+            {{ __('asdasd') }}
         </h2>
+    
     </x-slot>
 
     <div class="py-12">

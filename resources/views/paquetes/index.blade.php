@@ -6,9 +6,9 @@
             <h2 class="fw-bold text-primary mb-0 text-uppercase">
                 Explora El Salvador, Aventuras, Relax y Experiencias
             </h2>
-            {{-- <a href="{{ route('paquetes.create') }}" class="btn btn-success btn-lg px-4 py-2 d-flex align-items-center gap-2 shadow">
+            <a href="{{ route('paquetes.create') }}" class="btn btn-success btn-lg px-4 py-2 d-flex align-items-center gap-2 shadow">
                 <i class="bi bi-plus-circle fs-4"></i> <span>Nuevo Paquete</span>
-            </a> --}}
+            </a>
         </div>
 
         <div class="container py-5">
@@ -64,7 +64,7 @@
                     <h4>Itinerarios:</h4>
                     <ul id="modalItinerarios" class="list-group list-group-flush"></ul>
                 </div>
-                {{-- <div class="modal-footer">
+                <div class="modal-footer">
                     <a href="javascript:void(0);" id="editPaqueteBtn" class="btn btn-warning">Editar</a>
                     
                     <!-- Botón para eliminar el paquete -->
@@ -75,7 +75,7 @@
                     </form>
                 
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                </div> --}}
+                </div>
                 
             </div>
         </div>
